@@ -10,7 +10,7 @@ pipeline {
   parameters {
     string(name: 'person', defaultValue: 'Lokendrs Singh', description: 'What should I say?')
     booleanParam(name: 'isMale', defaultValue: 'true', description: "")
-    choise(name: 'person', choises: ['Jaipur','Mumbai','Pune'], description: "")
+    choice(name: 'person', choices: ['Jaipur','Mumbai','Pune'], description: "")
   }
   
   
