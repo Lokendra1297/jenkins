@@ -19,7 +19,7 @@ pipeline {
       steps {
         sh '''
         ls
-        data
+        date
         pwd
         cal 2022
         '''
