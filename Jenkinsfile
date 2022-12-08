@@ -43,11 +43,9 @@ pipeline {
       }
     }
     stage('Continue ?') {
-      Input {
-        message 'Should we continue'
-        ok 'yes we Should'
-      }
       steps {
+        Input message: 'Should we continue'
+        ok 'yes we Should'
         echo 'deploy on prod'
       }
     }
